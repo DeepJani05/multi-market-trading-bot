@@ -1,0 +1,29 @@
+# Core
+numpy==2.1.3
+pandas==2.2.3
+scipy==1.14.1
+joblib==1.4.2
+
+# ML
+xgboost==2.1.2
+scikit-learn==1.5.2
+tensorflow==2.18.0   # for the LSTM head
+
+# Data / Brokers
+alpaca-py==0.33.0
+oandapyV20==0.7.2
+python-binance==1.0.27
+httpx==0.27.2
+
+# Dashboard
+streamlit==1.40.1
+plotly==5.24.1
+
+# Config / logging
+pyyaml==6.0.2
+python-dotenv==1.0.1
+python-json-logger==2.0.7
+
+# Testing
+pytest==8.3.3
+pytest-cov==6.0.0

@@ -1,0 +1,51 @@
+# Multi-market trading bot configuration
+
+mode: paper  # paper | live
+
+brokers:
+  crypto:
+    venue: binance
+    testnet: true
+  equity:
+    venue: alpaca
+    paper: true
+  forex:
+    venue: oanda
+
+universe:
+  crypto:
+    - BTC/USDT
+    - ETH/USDT
+  equity:
+    - AAPL
+    - MSFT
+    - NVDA
+  forex:
+    - EUR/USD
+    - GBP/USD
+
+signal:
+  xgb_model_path: models/xgb_signal.joblib
+  lstm_model_path: models/lstm_signal.keras
+  sequence_length: 30
+  xgb_weight: 0.6
+  threshold: 0.55
+
+risk:
+  max_position_pct: 0.02
+  max_kelly_fraction: 0.25
+  drawdown_kill_pct: 0.08
+  max_exposure_per_class_pct: 0.40
+  min_signal_probability: 0.55
+
+backtest:
+  train_window: 504    # ~2 years of daily bars
+  test_window: 21      # ~1 month
+  step: 21
+  cost_per_trade_bps: 5
+
+alerts:
+  telegram_enabled: true
+
+dashboard:
+  refresh_seconds: 30
