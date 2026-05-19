@@ -2,7 +2,7 @@
 
 > An event-driven, multi-agent trading system that runs the same signal-generation pipeline across **crypto, US equities, and forex** — XGBoost + LSTM ensemble, live execution via Alpaca / OANDA / Binance, Streamlit P&L dashboard, Telegram alerts.
 
-[![CI](https://github.com/<your-handle>/multi-market-trading-bot/actions/workflows/ci.yml/badge.svg)](./.github/workflows/ci.yml)
+
 [![Python](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
 
 > ⚠️ **Educational use only.** Live trading carries the risk of substantial financial loss. This codebase is designed for paper-trading and research. Run with real money at your own risk and only after you understand every component.
